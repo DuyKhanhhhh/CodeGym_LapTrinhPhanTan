@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane alignment="CENTER" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx1.playTaiXiu">
+    <ImageView fitHeight="800.0" fitWidth="800.0">
+        <Image url="https://4kwallpapers.com/images/walls/thumbs_2t/8324.png" />
+    </ImageView>
+    <VBox>
+        <HBox alignment="CENTER" prefHeight="50.0">
+            <Label text="Nhà Cái Không Lừa" textFill="#ffa9a9">
+                <font>
+                    <Font name="Droid Sans Fallback" size="40.0" />
+                </font>
+            </Label>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <VBox>
+                <Label alignment="CENTER" prefHeight="150.0" prefWidth="300.0" text="TÀI" textFill="RED">
+                    <font>
+                        <Font size="96.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tai" prefHeight="40.0" prefWidth="300.0" />
+                <HBox alignment="CENTER_LEFT">
+                    <Label fx:id="show1" text="" />
+                </HBox>
+            </VBox>
+
+            <Label prefHeight="150.0" prefWidth="100.0" text="" />
+
+            <VBox>
+                <Label alignment="CENTER" prefHeight="150.0" prefWidth="300.0" text="XỈU">
+                    <font>
+                        <Font size="96.0" />
+                    </font>
+                </Label>
+                <TextField prefHeight="40.0" prefWidth="300.0" fx:id="xiu" />
+                <HBox alignment="CENTER_LEFT">
+                    <Label fx:id="show2" text="" />
+                </HBox>
+            </VBox>
+        </HBox>
+
+        <HBox alignment="CENTER" prefHeight="40.0">
+            <Label text="" textFill="white" fx:id="xx1">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="50.0">
+            <Label text="" textFill="white" fx:id="xx2">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+            <Label prefWidth="30.0" text="" />
+            <Label text="" textFill="white" fx:id="xx3">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+        </HBox>
+
+        <HBox alignment="CENTER">
+            <Button onAction="#buttonTai" prefHeight="50.0" prefWidth="180.0" text="Đặt Cược">
+                <font>
+                    <Font name="KacstArt" size="30.0" />
+                </font>
+            </Button>
+            <Label prefHeight="16.0" prefWidth="232.0" text="" />
+            <Button onAction="#buttonXiu" prefHeight="50.0" prefWidth="180.0" text="Đặt Cược">
+                <font>
+                    <Font name="KacstArt" size="30.0" />
+                </font>
+            </Button>
+        </HBox>
+        <Label prefHeight="10.0" text="" />
+        <HBox alignment="CENTER">
+            <Button onAction="#one" prefWidth="120.0" text="1k" textFill="#ffa9a9">
+                <font>
+                    <Font name="Tlwg Typewriter Bold" size="30.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#ten" prefWidth="120.0" text="10k" textFill="#ffa9a9">
+                <font>
+                    <Font name="Tlwg Typewriter Bold" size="30.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#fiveteen" prefHeight="56.0" prefWidth="120.0" text="50k" textFill="#ffa9a9">
+                <font>
+                    <Font name="Tlwg Typewriter Bold" size="30.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#onehundred" prefHeight="56.0" prefWidth="120.0" text="100k" textFill="#ffa9a9">
+                <font>
+                    <Font name="Tlwg Typewriter Bold" size="30.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#fivehundred" prefWidth="120.0" text="500k" textFill="#ffa9a9">
+                <font>
+                    <Font name="Tlwg Typewriter Bold" size="30.0" />
+                </font>
+            </Button>
+        </HBox>
+
+        <Label prefHeight="10.0" text="" />
+
+        <HBox alignment="CENTER">
+            <Button onAction="#allIn" text="ALL-IN">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#show" text="XEM" textFill="#ff537b">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Button>
+            <Label prefWidth="10.0" text="" />
+            <Button onAction="#delete" text="HỦY">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Button>
+        </HBox>
+
+        <Label prefHeight="20.0" text="" />
+
+        <HBox>
+            <Label text="Tiền: " textFill="#ffa9a9">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+            <Button fx:id="monney" prefHeight="37.0" prefWidth="221.0" text="0" />
+        </HBox>
+
+        <Label prefHeight="20.0" text="" />
+
+        <HBox>
+            <Label alignment="CENTER" text="Nạp Tiền: " textFill="#ffa9a9">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Label>
+            <TextField fx:id="getMonney" prefHeight="35.0" />
+            <Label prefWidth="5.0" />
+            <Button onAction="#submit" prefHeight="35.0" prefWidth="92.0" text="Submit">
+                <font>
+                    <Font size="18.0" />
+                </font></Button>
+        </HBox>
+
+    </VBox>
+</StackPane>

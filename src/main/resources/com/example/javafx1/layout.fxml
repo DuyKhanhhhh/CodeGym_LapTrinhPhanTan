@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1">
+    <top>
+        <Label text="ThietKeLayot" BorderPane.alignment="CENTER"/>
+    </top>
+    <left>
+        <Label text="Sidebar left" BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <Label text="idebar right" BorderPane.alignment="CENTER"/>
+    </right>
+    <bottom>
+        <Label text="Footer" BorderPane.alignment="CENTER"/>
+    </bottom>
+    <center>
+        <VBox BorderPane.alignment="CENTER"/>
+    </center>
+
+    <center>
+            <VBox>
+                <HBox alignment="CENTER" prefHeight="50.0">
+                    <Label text="Left"/>
+                </HBox>
+
+                <HBox alignment="TOP_CENTER" prefHeight="50.0">
+                    <Label alignment="CENTER" text="Center"/>
+                </HBox>
+
+                <HBox alignment="TOP_CENTER" prefHeight="50.0">
+                    <Label alignment="CENTER" text="Right"/>
+                </HBox>
+
+                <HBox alignment="CENTER" prefHeight="50.0">
+                    <Button text="ButtonCenter"/>
+                </HBox>
+
+                <HBox alignment="CENTER" prefHeight="40.0">
+                    <Label text="Input: "/>
+                    <TextField alignment="TOP_LEFT"/>
+                </HBox>
+
+                <HBox alignment="CENTER" prefHeight="100.0">
+                    <VBox alignment="CENTER" prefHeight="200.0">
+                        <CheckBox text="CheckBox1"/>
+                        <CheckBox text="CheckBox2"/>
+                        <CheckBox text="CheckBox3"/>
+                    </VBox>
+                </HBox>
+
+                <VBox alignment="CENTER" prefHeight="300.0">
+                    <RadioButton text="Radio button1"/>
+                    <RadioButton text="Radio button2"/>
+                    <RadioButton text="Radio button3"/>
+                </VBox>
+            </VBox>
+    </center>
+</BorderPane>
+

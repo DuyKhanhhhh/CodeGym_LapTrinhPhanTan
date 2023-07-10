@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javafx1.testBMI">
+
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label text="Tinh chi so BMI"/>
+    </HBox>
+
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label text="Weight: "/>
+        <TextField fx:id="weight"/>
+    </HBox>
+
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label text="Height: "/>
+        <TextField fx:id="height"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button text="Submit" onAction="#getBMI"/>
+    </HBox>
+
+</VBox>

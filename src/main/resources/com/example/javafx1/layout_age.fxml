@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" fx:controller="com.example.javafx1.SumAge"
+      xmlns:fx="http://javafx.com/fxml">
+    <Label text="Nhap Năm Sinh"/>
+    <TextField fx:id="year" />
+    <Button onAction="#caculateAge" text="Tinh Tuoi"/>
+</HBox>

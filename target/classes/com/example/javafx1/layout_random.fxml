@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javafx1.TestRandom">
+    <HBox alignment="CENTER" prefHeight="50.0">
+        <Label text="NumberRandom"/>
+    </HBox>
+    <HBox alignment="TOP_LEFT" prefHeight="50.0">
+        <Label text="Guess the number: "/>
+        <TextField fx:id="number"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button text="Submid" onAction="#submit"/>
+    </HBox>
+</VBox>

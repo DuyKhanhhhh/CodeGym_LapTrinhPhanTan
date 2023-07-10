@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="20.0"
+      xmlns="http://javafx.com/javafx/11.0.2"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.javafx1.TestCaculate">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextField fx:id="textField" prefHeight="38.0" prefWidth="280.0" />
+    <HBox>
+        <Button onAction="#number7" text="7" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#number8" text="8">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#number9" text="9">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#add" prefWidth="50.0" text="+">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+    </HBox>
+    <HBox>
+        <Button alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" onAction="#number4" text="4">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" onAction="#number5" text="5">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" onAction="#number6" text="6">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button alignment="TOP_LEFT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" onAction="#tru" prefHeight="46.0" prefWidth="50.0" text="-">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+
+    </HBox>
+    <HBox>
+        <Button onAction="#number1" text="1">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#number2" text="2">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#number3" text="3">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#core" prefHeight="46.0" prefWidth="50.0" text="x">
+         <font>
+            <Font size="24.0" />
+         </font>
+        </Button>
+
+    </HBox>
+    <HBox>
+        <Button onAction="#number0" text="0">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#divide" text="/">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <Button onAction="#equal" text="=">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+
+    </HBox>
+</VBox>
