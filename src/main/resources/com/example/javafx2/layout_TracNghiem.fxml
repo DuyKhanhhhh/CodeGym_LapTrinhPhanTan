@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx2.controler_TracNhiem">
+    <children>
+        <Label layoutX="14.0" layoutY="20.0" prefHeight="20.0" prefWidth="331.0" text="Câu 1:Súc Vật Có Mấy Chân">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="radioButton1A" layoutX="14.0" layoutY="59.0" selected="true" text="A: Một ">
+            <toggleGroup>
+                <ToggleGroup fx:id="ToggleGroup1"/>
+            </toggleGroup>
+          <font>
+             <Font size="18.0" />
+         </font>
+        </RadioButton>
+       <RadioButton fx:id="radioButton1B" layoutX="14.0" layoutY="89.0" selected="true" text="B: Hai" toggleGroup="$ToggleGroup1">
+          <font>
+             <Font size="18.0" />
+         </font>
+       </RadioButton>
+       <RadioButton fx:id="radioButton1C" layoutX="14.0" layoutY="119.0" mnemonicParsing="false" text="C: Ba" toggleGroup="$ToggleGroup1">
+          <font>
+             <Font size="18.0" />
+         </font>
+       </RadioButton>
+        <RadioButton fx:id="radioButton1D" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" text="D: Cả 3 đáp án trên" toggleGroup="$ToggleGroup1">
+          <font>
+             <Font size="18.0" />
+         </font>
+       </RadioButton>
+        <Label layoutX="14.0" layoutY="190.0" prefHeight="26.0" prefWidth="393.0" text="Câu 2:Đúng Thì Thấp Ngồi Thì Cao">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="radioButton2A" layoutX="14.0" layoutY="225.0" mnemonicParsing="false" text="A: Lợn">
+            <toggleGroup>
+                <ToggleGroup fx:id="ToggleGroup2"/>
+            </toggleGroup>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioButton2B" layoutX="14.0" layoutY="255.0" mnemonicParsing="false" text="B: Chó" toggleGroup="$ToggleGroup2">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioButton2C" layoutX="14.0" layoutY="285.0" mnemonicParsing="false" text="C: Gà" toggleGroup="$ToggleGroup2">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioButton2D" layoutX="14.0" layoutY="315.0" mnemonicParsing="false" text="D: Súc Vật" toggleGroup="$ToggleGroup2">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <Button layoutX="162.0" layoutY="354.0" onAction="#click" text="Hoàn Thành" />
+   </children>
+</AnchorPane>

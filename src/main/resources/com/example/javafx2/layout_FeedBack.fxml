@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="411.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx2.controler_FeedBack">
+   <children>
+      <Label layoutX="150.0" layoutY="14.0" text="Label">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="80.0" prefHeight="16.0" prefWidth="368.0" text="1) Cơ sở vật chất">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButton1A" layoutX="80.0" layoutY="125.0" selected="true" text="TB">
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroup1"/>
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton1B" layoutX="170.0" layoutY="125.0" selected="true" text="Khá" toggleGroup="$ToggleGroup1"/>
+      <RadioButton fx:id="radioButton1C" layoutX="280.0" layoutY="125.0" selected="true" text="Giỏi" toggleGroup="$ToggleGroup1" />
+
+      <Label layoutX="16.0" layoutY="175.0" prefHeight="16.0" prefWidth="368.0" text="2) Chất Lượng Đào Tạo">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButton2A" layoutX="80.0" layoutY="225.0" selected="true" text="TB">
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroup2"/>
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton2B" layoutX="170.0" layoutY="225.0" selected="true" text="Khá" toggleGroup="$ToggleGroup2"/>
+      <RadioButton fx:id="radioButton2C" layoutX="280.0" layoutY="225.0" selected="true" text="Giỏi" toggleGroup="$ToggleGroup2"/>
+      <Label layoutX="20.0" layoutY="264.0" prefHeight="16.0" prefWidth="368.0" text="3) Giảng Viên">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButton3A" layoutX="80.0" layoutY="311.0" selected="true" text="TB" >
+         <toggleGroup>
+            <ToggleGroup fx:id="ToggleGroup3"/>
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioButton3B" layoutX="170.0" layoutY="311.0" selected="true" text="Khá" toggleGroup="$ToggleGroup3"/>
+      <RadioButton fx:id="radioButton3C" layoutX="280.0" layoutY="311.0" selected="true" text="Giỏi" toggleGroup="$ToggleGroup3"/>
+   <Button layoutX="178.0" layoutY="364.0" onAction="#submit" text="Nộp" />
+   </children>
+</AnchorPane>
